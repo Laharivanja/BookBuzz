@@ -121,11 +121,11 @@ const Home = () => {
 
       {/* Header and search */}
       <div className="flex justify-between items-center my-6">
-        <h1 className="text-3xl">Books List</h1>
-        <Link to="/books/create">
-          <MdOutlineAddBox className="text-sky-800 text-4xl" />
-        </Link>
-      </div>
+  <h1 className="text-3xl text-blue-800">Books List</h1>
+  <Link to="/books/create">
+    <MdOutlineAddBox className="text-sky-800 text-4xl" />
+  </Link>
+</div>
 
       {/* Search bar */}
       <div className="flex justify-center mb-6">

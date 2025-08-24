@@ -30,29 +30,56 @@ const ShowBook = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <div className='flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4'>
+        // <div className='flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4'>
           
-          <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Title</span>
-            <span>{book.title}</span>
-          </div>
-          <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Author</span>
-            <span>{book.author}</span>
-          </div>
-          <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Publish Year</span>
-            <span>{book.publishYear}</span>
-          </div>
-          <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Create Time</span>
-            <span>{new Date(book.createdAt).toString()}</span>
-          </div>
-          <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Last Update Time</span>
-            <span>{new Date(book.updatedAt).toString()}</span>
-          </div>
-        </div>
+        //   <div className='my-4'>
+        //     <span className='text-xl mr-4 text-gray-500'>Title</span>
+        //     <span>{book.title}</span>
+        //   </div>
+        //   <div className='my-4'>
+        //     <span className='text-xl mr-4 text-gray-500'>Author</span>
+        //     <span>{book.author}</span>
+        //   </div>
+        //   <div className='my-4'>
+        //     <span className='text-xl mr-4 text-gray-500'>Publish Year</span>
+        //     <span>{book.publishYear}</span>
+        //   </div>
+        //   <div className='my-4'>
+        //     <span className='text-xl mr-4 text-gray-500'>Create Time</span>
+        //     <span>{new Date(book.createdAt).toString()}</span>
+        //   </div>
+        //   <div className='my-4'>
+        //     <span className='text-xl mr-4 text-gray-500'>Last Update Time</span>
+        //     <span>{new Date(book.updatedAt).toString()}</span>
+        //   </div>
+        // </div>
+                <div className='flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4 gap-2'>
+  <div className='bg-yellow-100 p-2 rounded'>
+    <span className='text-gray-500 font-semibold mr-2'>Title:</span>
+    <span>{book.title}</span>
+  </div>
+
+  <div className='bg-green-100 p-2 rounded'>
+    <span className='text-gray-500 font-semibold mr-2'>Author:</span>
+    <span>{book.author}</span>
+  </div>
+
+  <div className='bg-blue-100 p-2 rounded'>
+    <span className='text-gray-500 font-semibold mr-2'>Publish Year:</span>
+    <span>{book.publishYear}</span>
+  </div>
+
+  <div className='bg-purple-100 p-2 rounded'>
+    <span className='text-gray-500 font-semibold mr-2'>Create Time:</span>
+    <span>{new Date(book.createdAt).toString()}</span>
+  </div>
+
+  <div className='bg-pink-100 p-2 rounded'>
+    <span className='text-gray-500 font-semibold mr-2'>Last Update Time:</span>
+    <span>{new Date(book.updatedAt).toString()}</span>
+  </div>
+</div>
+
       )}
     </div>
   );
